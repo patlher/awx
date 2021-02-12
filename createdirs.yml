@@ -1,4 +1,4 @@
-- hosts: all_servers
+- hosts: all
   tasks:
   - name: Create multiple directories
     file: path='{{item}}' state=directory mode=775 owner=root group=root
