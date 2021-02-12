@@ -2,8 +2,8 @@
   tasks:
   - name: Create multiple directories
     file: 
-      path: '{{item}}' 
-      state: absent 
+      path: '{{ item }}' 
+      state: directory 
       mode: 0775 
       owner: patrick 
       group: patrick
