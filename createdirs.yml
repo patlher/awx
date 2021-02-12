@@ -1,8 +1,13 @@
 - hosts: all
   tasks:
   - name: Create multiple directories
-    file: path='{{item}}' state=directory mode=775 owner=root group=root
+    file: 
+      path: '{{item}}' 
+      state: directory 
+      mode: 775 
+      owner: patrick 
+      group: patrick
     with_items:
-    - '/mnt/dir1'
-    - '/mnt/dir2'
-    - '/mnt/dir3'
+    - '/tmp/dir1'
+    - '/tmp/dir2'
+    - '/tmp/dir3'
