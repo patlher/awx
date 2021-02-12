@@ -3,7 +3,7 @@
   - name: Create multiple directories
     file: 
       path: '{{ item }}' 
-      state: directory 
+      state: absent 
       mode: 0775 
       owner: patrick 
       group: patrick
